@@ -1,4 +1,3 @@
-import os.path
 from setuptools import find_packages, setup
 
 from pip.req import parse_requirements
@@ -8,7 +7,7 @@ def get_meta():
     mod_locals = {}
 
     execfile(
-        '{}/tornado_console/__about__.py'.format(os.path.dirname(__file__)),
+        'tornado_console/__about__.py',
         mod_locals,
         mod_locals,
     )
